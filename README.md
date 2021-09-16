@@ -74,20 +74,26 @@ In this step, we shall get everything we need for the entire installation proces
 -----Ubuntu-----
 
 $ sudo apt-get update
+
 $ sudo apt-get install git python3 python3-venv python3-pip python3-dev python3-setuptools python-cffi  libcurl4-openssl-dev -y
 
 ----- Fedora -----
+
 $ sudo dnf update
+
 $ sudo dnf install git python3 gcc python3-devel python3-crypto \
      python3-pycurl libcurl-devel -y
 
 -----CentOS 7-----
+
 $ sudo yum -y update && sudo yum install -y epel-release
+
 $ sudo yum -y update && sudo yum install -y \
     git gcc python36-devel python36-crypto python36-pycurl \
     libcurl-devel
 
 -----macOS-----
+
 $ brew install python3
 
 Step 2: Generate SSH Public Keys
@@ -102,11 +108,15 @@ Step 3: Clone Streisand’s repository and prepare for installation
 On your local machine, clone Streisand’s repository and prepare to install the server
 
 $ cd ~
+
 $ git clone https://github.com/StreisandEffect/streisand.git
+
 $ cd streisand
+
 Run the installer for Ansible and its dependencies. The installer will detect missing packages, and print the commands needed to install them. (Ignore the Python 2.7 DEPRECATION warning; ignore the warning from python-novaclient that pbr 5.1.3 is incompatible.) If all packages it needs are present, it will proceed to install necessary tools it needs so that installation of Streisand goes smoothly
 
 $ ./util/venv-dependencies.sh ./venv
+
 Found a python3 command....
 This system appears to be running Ubuntu or Debian. Checking
 for critical packages.
@@ -128,6 +138,7 @@ Step 4: Install Streisand
 While still in the same Streisand cloned directory, activate the Ansible packages that were installed in the previous step as follows
 
 $ source ./venv/bin/activate
+
 Then execute the Streisand script. You should see an output as shown below the command. Choose where your server sits. For this example, I will go with “Existing Server“
 
 $ ./streisand
