@@ -55,7 +55,7 @@ StatFile "/usr/share/tinyproxy/stats.html"
 # and enable the Syslog directive.  These directives are mutually
 # exclusive.
 #
-Logfile "/var/log/tinyproxy/tinyproxy.log"
+Logfile "/tmp/tinyproxy.log"
 
 #
 # LogLevel:
@@ -78,7 +78,7 @@ LogLevel {{ tinyproxy_log_level }}
 # PidFile: Write the PID of the main tinyproxy thread to this file so it
 # can be used for signalling purposes.
 #
-PidFile "{{ tinyproxy_pid_file }}"
+PidFile "/tmp/tinyproxy.pid"
 
 #
 # MaxClients: This is the absolute highest number of threads which will
