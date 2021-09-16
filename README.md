@@ -131,7 +131,8 @@ Once Streisand completes installation, you will find complete instructions to se
 Login by pointing your browser to <code>https://IP-or-FQDN</code> of your server. You will get a login prompt. Enter the username and password found at the bottom the file
 And you will be ushered into the documentation page. Therein you will find various ways that you can connect to your Streisand Gateway server using various clients.
 
-Concluding Remarks
+<b>Concluding Remarks</b>
+
 Once you connect to your Streisand Gateway server, your IP is protected and you can access restricted content found in other countries. Get naughty this festive season by installing Streisand which incoporates Ansible in its installation and see the results that you will get. As you celebrate with the ones you care about, we continue to appreciate your relentless support and we wish you a marvelous time. Do not forget to keep safe.
 
 ## iptables rule for case when ufw not working
