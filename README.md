@@ -89,7 +89,7 @@ In this step, we shall get everything we need for the entire installation proces
 
 <code> sudo apt-get update </code>
 
-<code> sudo apt-get install git python3 python3-venv python3-pip python3-dev python3-setuptools python-cffi  libcurl4-openssl-dev -y </code>
+<code> sudo apt-get install git python3 python3-venv python3-pip python3-dev python3-setuptools python-cffi  libcurl4-openssl-dev libffi-dev -y </code>
 
 ----- Fedora -----
 
