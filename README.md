@@ -1,4 +1,4 @@
-# Streisand
+# Streisand 2021 (UPD for Ubuntu 20.04)
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/jlund/streisand/master/logo.jpg" alt="Automate the effect"/> 
