@@ -135,7 +135,7 @@ And you will be ushered into the documentation page. Therein you will find vario
 
 Once you connect to your Streisand Gateway server, your IP is protected and you can access restricted content found in other countries. Get naughty this festive season by installing Streisand which incoporates Ansible in its installation and see the results that you will get. As you celebrate with the ones you care about, we continue to appreciate your relentless support and we wish you a marvelous time. Do not forget to keep safe.
 
-## iptables rule for case when ufw not working
+## iptables rules (for case when ufw not working - bug on Oracle VPS)
 
 <code>iptables -I POSTROUTING -o enp0s3 -j MASQUERADE</code>
  
