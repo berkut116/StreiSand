@@ -15,7 +15,7 @@
       get_url:
         url: "{{ tunnelblick_url }}"
         dest: "{{ openvpn_mirror_location }}"
-        checksum: "{{ tunnelblick_checksum }}"
+#        checksum: "{{ tunnelblick_checksum }}"
         owner: www-data
         group: www-data
         mode: 0644
