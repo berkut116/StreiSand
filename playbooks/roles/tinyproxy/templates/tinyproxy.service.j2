@@ -5,9 +5,10 @@ Documentation=man:tinyproxy(8)
 Documentation=https://www.banu.com/tinyproxy/
 
 [Service]
-Type=forking
-PIDFile={{ tinyproxy_pid_file }}
-ExecStart=/usr/sbin/tinyproxy -c {{ tinyproxy_conf_file }}
+Type=simple
+User=root
+PIDFile=/tmp/tinyproxy/tinyproxy.pid
+ExecStart=/usr/bin/tinyproxy -c /etc/tinyproxy/tinyproxy.conf -d
 ExecStop=/usr/bin/killall -9 tinyproxy
 ExecReload=/bin/kill -HUP $MAINPID
 PrivateTmp=true
