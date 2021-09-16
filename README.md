@@ -90,22 +90,6 @@ In this step, we shall get everything we need for the entire installation proces
 <code> sudo apt-get update </code>
 
 <code> sudo apt-get install git python3 python3-venv python3-pip python3-dev python3-setuptools python-cffi  libcurl4-openssl-dev libffi-dev -y </code>
-
------ Fedora -----
-
-<code> sudo dnf update </code>
-
-<code> sudo dnf install git python3 gcc python3-devel python3-crypto python3-pycurl libcurl-devel -y </code>
-
------CentOS 7-----
-
-<code> sudo yum -y update && sudo yum install -y epel-release </code>
-
-<code> sudo yum -y update && sudo yum install -y git gcc python36-devel python36-crypto python36-pycurl libcurl-devel </code>
-
------macOS-----
-
-<code> brew install python3 </code>
    
 <b>Step 2</b>: Generate SSH Public Keys
 We need authentication via keys between our local machine and the server sitting in the cloud. You can easily generate ssh keys as follows. Enter another file in which to save the key if you do not like the default. You can leave the passphrase empty.
