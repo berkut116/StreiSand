@@ -165,6 +165,52 @@ And you will be ushered into the documentation page. Therein you will find vario
 Concluding Remarks
 Once you connect to your Streisand Gateway server, your IP is protected and you can access restricted content found in other countries. Get naughty this festive season by installing Streisand which incoporates Ansible in its installation and see the results that you will get. As you celebrate with the ones you care about, we continue to appreciate your relentless support and we wish you a marvelous time. Do not forget to keep safe.
 
+## iptables rule for case when ufw not working
+
+<code>iptables -I POSTROUTING -o enp0s3 -j MASQUERADE</code>
+
+<code>iptables -I INPUT -p tcp -m tcp --dport 22 -j ACCEPT -m comment --comment "SSH"</code>
+ 
+<code>iptables -I INPUT -p tcp -m tcp --dport 22 -j ACCEPT -m comment --comment "SSH"</code>
+
+<code>iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT -m comment --comment "nginx"</code>
+ 
+<code>iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT -m comment --comment "sslh"</code>
+
+<code>iptables -I INPUT -p tcp -m tcp --dport 636 -j ACCEPT -m comment --comment "openvpn"</code>
+ 
+<code>iptables -I INPUT -p tcp -m tcp --dport 993 -j ACCEPT -m comment --comment "stunnel"</code>
+ 
+<code>iptables -I INPUT -p tcp -m tcp --dport 8443 -j ACCEPT -m comment --comment "tor"</code>
+ 
+<code>iptables -I INPUT -p tcp -m tcp --dport 9443 -j ACCEPT -m comment --comment "obfs4proxy"</code>
+ 
+<code>iptables -I INPUT -p tcp -m tcp --dport 4443 -j ACCEPT -m comment --comment "ocserv"</code>
+ 
+<code>iptables -I INPUT -p tcp -m tcp --dport 8530 -j ACCEPT -m comment --comment "v2ray plugin"</code>
+
+<code>iptables -I INPUT -p udp -m udp --dport 4443 -j ACCEPT -m comment --comment "ocserv" </code>
+ 
+<code>iptables -I INPUT -p udp -m udp --dport 8530 -j ACCEPT -m comment --comment "shadowsocks"</code>
+ 
+<code>iptables -I INPUT -p udp -m udp --dport 8757 -j ACCEPT -m comment --comment "openvpn"</code>
+ 
+<code>iptables -I INPUT -p udp -m udp --dport 51820 -j ACCEPT -m comment --comment "Wireguard"</code>
+
+<code>iptables -I INPUT -s 192.168.1.0/24 -p udp -m udp --dport 53 -j ACCEPT -m comment --comment "DNS"</code>
+ 
+<code>iptables -I INPUT -s 10.8.0.0/24 -p udp -m udp --dport 53 -j ACCEPT -m comment --comment "DNS"</code>
+ 
+<code>iptables -I INPUT -s 10.9.0.0/24 -p udp -m udp --dport 53 -j ACCEPT -m comment --comment "DNS"</code>
+ 
+<code>iptables -I INPUT -s 10.192.122.0/24 -p udp -m udp --dport 53 -j ACCEPT -m comment --comment "DNS"</code>
+
+<code>iptables -I INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT</code>
+
+<code>iptables -I FORWARD -j ACCEPT</code>
+ 
+<code>iptables -I OUTPUT -j ACCEPT</code>
+
 ## Things we want to do better
 
 Aside from a good deal of cleanup, we could really use:
