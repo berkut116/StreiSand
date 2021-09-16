@@ -1,6 +1,6 @@
 # Streisand 2021 (UPD for Ubuntu 20.04)
 
-This is my fork for kassemz/streisand (forked from StreisandEffect/streisand)
+This is my fork for <i>kassemz/streisand</i> (forked from <i>StreisandEffect/streisand</i>)
 
 Checked and proofed to work on Oracle Cloud Ubuntu 20.04 arm64
 
