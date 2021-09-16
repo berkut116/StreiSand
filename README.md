@@ -137,7 +137,7 @@ Once you connect to your Streisand Gateway server, your IP is protected and you 
 
 ## iptables rules (for case when ufw not working - bug on Oracle VPS)
 
-<code>iptables -I POSTROUTING -o enp0s3 -j MASQUERADE</code>
+<code>iptables -t nat -I POSTROUTING -o enp0s3 -j MASQUERADE</code>
  
 <code>iptables -I INPUT -p tcp -m tcp --dport 22 -j ACCEPT -m comment --comment "SSH"</code>
 
