@@ -112,21 +112,6 @@ Run the installer for Ansible and its dependencies. The installer will detect mi
 
 <code> ./util/venv-dependencies.sh ./venv </code>
 
-Found a python3 command....
-This system appears to be running Ubuntu or Debian. Checking
-for critical packages.
-
-Found: build-essential
-Found: python3-pip
-Found: python3-openssl
-Found: python3-dev
-Found: python3-setuptools
-Found: python3-venv
-Found: python-cffi
-Found: libffi-dev
-Found: libssl-dev
-Found: libcurl4-openssl-dev
-Found all critical packages.
 In case you find any missing packages in the output, kindly install them depending on the environment your local machine is on.
 
 <b>Step 4:</b> Install Streisand
