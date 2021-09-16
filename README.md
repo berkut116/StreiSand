@@ -1,5 +1,19 @@
 # Streisand 2021 (UPD for Ubuntu 20.04)
 
+This is my fork for kassemz/streisand (forked from StreisandEffect/streisand)
+
+Checked and proofed to work on Oracle Cloud Ubuntu 20.04 arm64
+
+<br>
+
+<b> Use this settings while installation: </b>
+
+<code> 7. localhost (Advanced) </code>
+
+ you may leave choise in state <code>[yes]</code> in all other options exept last one (for me it was broken):
+ 
+<code> [BROKEN ON SOME PROVIDERS, including AWS] Enable DNS-over-HTTPS (cloudflared)? Press enter for default  [no]: </code>
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/jlund/streisand/master/logo.jpg" alt="Automate the effect"/> 
 </p>
