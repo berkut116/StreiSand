@@ -168,8 +168,6 @@ Once you connect to your Streisand Gateway server, your IP is protected and you 
 ## iptables rule for case when ufw not working
 
 <code>iptables -I POSTROUTING -o enp0s3 -j MASQUERADE</code>
-
-<code>iptables -I INPUT -p tcp -m tcp --dport 22 -j ACCEPT -m comment --comment "SSH"</code>
  
 <code>iptables -I INPUT -p tcp -m tcp --dport 22 -j ACCEPT -m comment --comment "SSH"</code>
 
