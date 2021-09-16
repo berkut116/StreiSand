@@ -2,7 +2,7 @@
 
 This is my fork for <i>kassemz/streisand</i> (forked from <i>StreisandEffect/streisand</i>)
 
-Checked and proofed to work on Oracle Cloud Ubuntu 20.04 arm64
+Checked and proved to work on Oracle Cloud Ubuntu 20.04 arm64
 
 <br>
 
